@@ -12,6 +12,7 @@ type gitHubHookPayload struct {
 	Repository struct {
 		Url string
 	}
+	ssh_url string
 }
 
 // A GitHubFormHook contains push info in JSON within an x-www-form-urlencoded POST body
