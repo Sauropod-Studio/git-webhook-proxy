@@ -41,7 +41,7 @@ func (h GitHubJsonHook) GetGitRepoUri(req *http.Request) (string, error) {
 func getSshUriFromGitHubWebhookJson(body string) (string, error) {
 	var payload gitHubHookPayload
 	json.Unmarshal([]byte(body), &payload)
-	repoHttpUrl := payload.Repository.Url
+	repoHttpUrl := payload.ssh_url
 	if repoHttpUrl == "" {
 		return "", errors.New("No URL found in webhook payload")
 	}

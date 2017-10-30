@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/orrc/git-webhook-proxy/hooks"
+	"github.com/Sauropod-Studio/git-webhook-proxy/hooks"
 	"log"
 	"net/http"
 	"net/http/httputil"
